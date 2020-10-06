@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PHOTO GALLERY</title>
+	<h1>Photo Gallery</h1>
+	<style>
+		html{
+			background-color:lightgray;
+		}
+		*{
+			padding:0px;
+			margin:0px;
+			list-style:none;
+		}
+		.main{
+			display:block;
+			width:30%;
+			padding:10px;
+			background-color:white;
+			margin:auto;
+		}
+		.main img{
+			width:100%;
+			padding:5px;
+		}
+		.mysecond{
+			padding-top:20px;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			margin:1%;
+		}
+		.mysecond li{
+			width:30%;
+			background-color:white;
+		}
+		.mysecond li img{
+			width:100%;
+		}
+	</style>
+</head>
+<body>
+<div class="main">
+	<img id="mainimage" src="images/ee.jpg">
+</div>
+<div>
+	<ul class="mysecond" >
+		<li><img onclick="show(this)" src="images/aa.jpg" id="img5"></li>
+		<li><img onclick="show(this)" src="images/bb.jpg" id="img1"></li>
+		<li><img onclick="show(this)" src="images/cc.jpg" id="img2"></li>
+		<li><img onclick="show(this)" src="images/dd.jpg" id="img3"></li>
+		<li><img onclick="show(this)" src="images/ee.jpg" id="img4"></li>
+		<li><img onclick="show(this)" src="images/ff.jpg" id="img5"></li>
+
+		
+	</ul>
+</div>
+<script>
+	function show(images){
+		document.getElementById("mainimage").src=images.src;
+	}
+</script>
+</body>
+</html>

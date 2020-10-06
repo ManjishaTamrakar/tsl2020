@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <div>
+            <h5>Original Content</h5>
+            <p>
+                inside paragraph
+                <span>inside span</span>
+                inside paragraph
+            
+                
+            </p>
+        </div>
+        <div>
+            <h5>Output</h5>
+            <div id="output"></div>
+        </div>
+        <script>
+            var btn = document.querySelector('button');
+            functiom.random(number){
+                return Math.floor(Math.random() * (number+1));
+            }
+            function changeBgColor(){
+                var rCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+                document.body.style.backgroundColor = rCol;
+            }
+        </script>
+        <script>
+            var baseElement = document.querySelector("p");
+            document.getElementById("output").innerHTML = (baseElement.querySelector("div span").innerHTML);
+        </script>
+    </head>
+    <body>
+        <button onclick = "changeBgColor()">Change Color</button>
+    </body>
+</html>

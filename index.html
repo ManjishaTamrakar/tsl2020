@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+	<title>javascript Examples</title>
+	<script >
+		alert("hello World!");
+	</script>
+	<style>
+		#randomImage{
+			width:500px;
+			height:400px;
+		}
+	</style>
+</head>
+<body>
+	<body onload="admissionOpen()">
+
+		<button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Admission Open</p>
+      <img src= "images/admissionOpen.jpg" width="560px" alt="admission open" title="admission open"/>
+    </div>
+
+  </div>
+
+
+	<div id="errorMessage" style="color":"red;"></div>
+
+	<form method="POST" name="login" onsubmit="return validateForm();">
+        <fieldset><legend>Login</legend>
+        <input type="text" name="eml" placeholder="you@domain.com">
+        <input type="password" name="password" placeholder="xxxxxxxx">
+        <input type="submit" name="submit" value="Login" />
+        </fieldset>
+    </form>
+
+	<button onclick="ranImage()">Roll Dice</button>
+	<img src = "images/a.jpg" alt="Roll Dice" title="Roll Dice" id="randomImages">
+	<style>
+		#rollDice{
+			width:500px;
+			height:400px;
+		}
+	</style>
+</body>
+<body>
+	
+
+	<button onclick="ranImage()">Random Images</button>
+
+	<img src = "images/1.jpg" alt="Random Images" title="random images" id="randomImages">
+</body>
+	<form onsubmit="return getTotal()">
+		<input type="number" id="qty">
+		<input type="number" id="price">
+		<input type="submit" value="getResult">
+	</form>
+	<div id="nettotal"></div>
+<div id="date"></div>
+
+<div>
+	<h5>Original content</h5>
+	<p>Hello i am second <span>SEcond Span Content</span> paragraph</p>
+
+	<p>
+	  inside paragraph
+	  <span>inside span</span>
+	  inside paragraph
+	</p>
+  </div>
+  <div>
+	<h5>Output</h5>
+	<div id="output"></div>
+  </div>
+
+<button onclick ="window.close()".Close</button>
+
+	
+	<div id="result" style="position:absolute; top:100px; right:50px;">
+    </div>
+    <div id="multable"></div>
+
+	<button onclick="hello()" > hello </button>
+<script>
+	document.writeln("<h1>program to display square of 1 to 10</h1>");
+		for(var i = 1; i <= 10; i++) {
+			document.writeln("The square of "+ i + "is "+ square(i));
+		}
+
+		function square ( y ) {
+			return y * y;
+
+		}
+
+	var name="Class";
+	document.write("<h1>Good Morning,"+name+" ,<h1>");
+</script>
+<script src="scripts/functions.js">
+</script>
+
+<noscript>
+	<p> Tthis is a <a href="example.html">Link to more example</a>.</p>
+</noscript>
+
+<script>
+	var value;
+	document.writeln( " <p>Random Numbers</p><ol>");
+
+	for ( var i = 1; i <=30; ++i)
+	{
+		value = Math.floor( 1 + Math.random() * 6 );
+		document.writeln( "<li>" + value + "</li>");
+	} //end for
+</script>
+
+
+<script>
+  var page = "News";
+switch (page)
+{
+	case "Home":
+	{ document.write("You selected Home") 
+	  break;
+	}
+	case "About": document.write("You selected About") 
+	break
+	case "News": document.write("You selected News") 
+	break
+	case "login": document.write("You selected Login") 
+	break
+	case "Links": document.write("You selected Links") 
+	break
+	default:
+	 document.write("Page not found");
+  }
+  </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Conter-Controlled Rrepetition</title>
+	<script>
+		var counter = 1; //initialization
+		while (counter <= 7) // repetition condition
+		{
+			document.write( "<p style = 'font-size: " +
+				counter + "ex' >HTML5 font size " + counter + "ex</p>">);
+			++counter; //increment
+		}
+	</script>
+</head> 
+<body>
+ <script>
+ 	numbers = []
+ 	numbers.push("One")
+ 	numbers.push("Two")
+ 	numbers.push("Three")
+ 	for (j = 0 ; j < numbers.length ; ++j)
+ 		document.write("Element " + j +" =" + numbers[j] + "<br>")
+ 	// numbers = Array( "One", "Two", "Three")
+ </script>
+
+ <script>
+ 	balls = {"golf": "Golf balls, 6",
+              "tennis": "Tennis balls, 3",
+               "soccer": "Soccer ball, 1"
+                "ping": "Ping Pong balls, 1 doz"
+            }
+                for (ball in balls)
+                	document.write(ball + " = " balls[ball] + "<br>")
+ </script>
+
+
+ <script>
+ 	checkerbooard = Array(
+      Array('', 'o', '', 'o', '', 'o', '', 'o'),
+      Array('o', '', 'o', '', 'o', '', 'o', ''),
+      Array('', 'o', '', 'o', '', 'o', '', 'o'),
+      Array('', '', '', '', '', '', '', '', ''),
+      Array('', '', '', '', '', '', '', '', ''),
+      Array('o', '', 'o', '', 'o', '', 'o', ''),
+      Array('', 'o', '', 'o', '', 'o', '', 'o'),
+      Array('o', '', 'o', '', 'o', '', 'o', ''),
+      document.write("<pre>")
+      for (j = 0 ; j < 8 ; ++j)
+      {
+      	for (k = 0 ; k < 8; ++k)
+      		document.write(checkerbooard[j][k] + "")
+      		document.write("<br>")
+      	}
+      document.write("</pre>")
+
+       
+ </script>
+
+<br>
+ <script>
+ 	pets = ["Cat", "Dog", "Rabbit", "Hamstter"]
+ 	pets.forEach(output)
+ 	function output(element, index, array)
+ 	{
+ 		document.write("Element at index " + index +  " has the value" + element + "<br>")
+ 	}
+ </script>
+<br>
+
+ <script>
+ 	pets = ["Cat", "Dog", "Rabbit", "Hamstter"]
+ 	document.write(pets.join()    + "<br>")
+ 	document.write(pets.join(' ')    + "<br>")
+ 	document.write(pets.join(' : ')    + "<br>")
+</script>
+
+
+<br>
+<script>
+	sports = ["Football", "Tennis", "Baseball"]
+	document.write("Start = "    + sports + "<br>")
+	sports.push("Hockey")
+	document.write("After Push = " + sports + "<br>")
+	removed = sports.pop()
+	document.write("After pop = " + sports + "<br>")
+	document.write("Removed = " + removed + "<br>")
+
+</script>
+
+<body>
+	<h2>Values in array1 by row</h2>
+	<div id = "output1"></div>
+	<h2>Values in array2 by row</h2>
+	<div id = "output2"></div>	
+</body>
+
+	</body>
+</html>
